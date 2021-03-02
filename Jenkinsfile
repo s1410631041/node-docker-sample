@@ -9,13 +9,13 @@ pipeline {
 
     stage('stop docker') {
       steps {
-        sh '(docker rm -f node-docker-sample_server_1 | true)'
+        sh 'docker rm -f node-docker-sample_server_1 | true'
       }
     }
 
     stage('start node docker') {
       steps {
-        sh 'docker-compose up -d server'
+        sh 'docker-compose up -d server '
       }
     }
 
