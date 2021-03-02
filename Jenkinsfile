@@ -15,7 +15,7 @@ pipeline {
 
     stage('start node docker') {
       steps {
-        sh 'docker-compose up -d server '
+        sh 'docker-compose up -d server'
       }
     }
 
