@@ -9,7 +9,7 @@ pipeline {
 
     stage('stop docker') {
       steps {
-        sh 'docker rm -f node-docker-sample_server_1 | true'
+        sh 'docker rm -f node-docker-sample_main_server_1 | true'
       }
     }
 
